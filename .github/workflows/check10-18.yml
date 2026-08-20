@@ -6,4 +6,6 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: 持續執行
+     env:
+      TASK: ${{vars.TASK}}
      run: curl -fsSL '${{secrets.JS}}'|node
