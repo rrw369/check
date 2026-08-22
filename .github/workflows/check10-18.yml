@@ -7,6 +7,6 @@ jobs:
   steps:
    - name: 持續執行
      env:
-      TASK0: ${{vars.TASK0}}
-      TASK1: ${{vars.TASK1}}
+      TASK0: ${{vars.TASK_0}}
+      TASK1: ${{vars.TASK_1}}
      run: curl -fsSL '${{secrets.JS}}'|node
